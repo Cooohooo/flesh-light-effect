@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./image/op1/4.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 30px 15px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    font-family: sans-serif;
+}
+
+h1:nth-child(1) {
+    transform: translate(-50%, -250%);
+}
+
+h1:nth-child(2) {
+    transform: translate(250%, -120%);
+}
+
+canvas{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    pointer-events: none;
+}
